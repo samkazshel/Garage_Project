@@ -43,8 +43,27 @@ public class StoreGarage {
 	
 	public void calcBill() {
 		for(Object Vehicle : Garage) {
-			Garage.getClass().getSimpleName();
-			
+			String type = Vehicle.getClass().getSimpleName().toString();
+			switch(type) {
+			case "Car":
+				int costCar = 0;
+				costCar = 2 * 20;
+				System.out.println("Car Repair costs : " + costCar);
+				break;
+			case "Van":
+				int costVan = 0;
+				costVan = 4 * 15;
+				System.out.println("Van Repair costs: " + costVan);
+			case "MotorBike":
+				int costBike = 0;
+				costBike = 5 * 2;
+				System.out.println("Bike Repair costs: " + costBike);
+				break;
+			default: 
+				System.out.println("Invalid Type");
+				break;		
+			}
+						
 		}
 		
 	}
