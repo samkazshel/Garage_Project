@@ -13,13 +13,14 @@ public class StoreGarage {
 	ArrayList<Vehicle> Garage = new ArrayList<>();
 	
 	
-	public void addVehicle() {
-		Car Reno2007 = new Car("Reno Clio 2007", "REG 1235", false, "3 Cylinder", 5, 3);
-		Van FordTransit2013 = new Van("Ford Transit 2013", "Reg 4573", true, "v6", 50.5f, true);
-		MotorBike Yamaha56 = new MotorBike("Yamaha 56", "REG 324", true, "1000cc", "Off Road", "Normal");
-		Garage.add(Reno2007);
-		Garage.add(FordTransit2013);
-		Garage.add(Yamaha56);
+	public void addVehicle(Vehicle vehicle) {
+		//this method is also an option but this means that a user would have to access the storage garage class
+//		Car Reno2007 = new Car("Reno Clio 2007", "REG 1235", false, "3 Cylinder", 5, 3);
+//		Van FordTransit2013 = new Van("Ford Transit 2013", "Reg 4573", true, "v6", 50.5f, true);
+//		MotorBike Yamaha56 = new MotorBike("Yamaha 56", "REG 324", true, "1000cc", "Off Road", "Normal");
+//		Garage.add(Reno2007);
+//		Garage.add(FordTransit2013);
+		Garage.add(vehicle);		
 	}
 	
 	public void displayGarage() {
@@ -41,6 +42,10 @@ public class StoreGarage {
 	}
 	
 	public void calcBill() {
+		for(Object Vehicle : Garage) {
+			Garage.getClass().getSimpleName();
+			
+		}
 		
 	}
 }
