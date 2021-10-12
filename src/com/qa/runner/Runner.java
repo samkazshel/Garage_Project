@@ -10,6 +10,11 @@ public class Runner {
 		
 		g.addVehicle();
 		g.displayGarage();
+		g.removeVehicleByReg("REG 1235");
+		g.removeVehicleByReg("Reg 4573");
+		g.displayGarage();
+		g.emptyGarage();
+		g.displayGarage();
 
 	}
 
