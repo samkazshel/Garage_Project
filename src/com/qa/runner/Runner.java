@@ -17,12 +17,14 @@ public class Runner {
 		g.addVehicle(new Car("Reno Clio 2007", "REG 1235", false, "3 Cylinder", 5, 3));
 		g.addVehicle(new Van("Ford Transit 2013", "Reg 4573", true, "v6", 50.5f, true));
 		g.addVehicle(new MotorBike("Yamaha 56", "REG 324", true, "1000cc", "Off Road", "Normal"));
+		g.addVehicle(new Car("Honda Accord 2017", "REG 5678", true, "2 Cylinder Diesel", 5, 5));
 		g.displayGarage();
-		g.removeVehicleByReg("REG 1235");
-		g.removeVehicleByReg("Reg 4573");
-		g.displayGarage();
-		g.emptyGarage();
-		g.displayGarage();
+		g.calcBill();
+//		g.removeVehicleByReg("REG 1235");
+//		g.removeVehicleByReg("Reg 4573");
+//		g.displayGarage();
+//		g.emptyGarage();
+//		g.displayGarage();
 
 	}
 
